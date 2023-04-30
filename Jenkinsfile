@@ -4,11 +4,13 @@ pipeline {
       stage("build") {
           steps {
             echo "building in progress..." 
+            echo "Added polling method"
           }
       }
       stage("test") {
           steps {
             echo "testing in progress..." 
+            echo "Added polling method"
           }
       }
       stage("deploy") {
