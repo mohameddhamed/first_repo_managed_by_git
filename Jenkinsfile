@@ -1,13 +1,13 @@
 pipeline {
   agent any
   stages {
-      stage("build") {
+      stage("frontend") {
           steps {
             echo "building in progress..." 
             echo "Added polling method"
             echo "Adding Gradle Wrapper"
             withGradle {
-              sh './gradlew build'
+              sh './gradlew build -v'
             }
           }
       }
