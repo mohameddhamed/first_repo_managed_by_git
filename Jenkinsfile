@@ -6,8 +6,8 @@ pipeline {
             echo "building in progress..." 
             echo "Added polling method"
             echo "Adding Gradle Wrapper"
-            withGradle {
-              sh './gradlew build -v'
+            withGradle() {
+              sh './gradlew -v'
             }
           }
       }
